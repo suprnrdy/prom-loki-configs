@@ -28,9 +28,9 @@ scrape_configs:
     # scheme defaults to 'http'.
 
     static_configs:
-         - targets: ['localhost:9090','cadvisor:8080','node-exporter:9100', 'nginx-exporter:9113']
+         - targets: ['localhost:9090','cadvisor:8080','node-exporter:9100']
 # Alert manager config
-alerting:
-  alertmanagers:
-    - static_configs:
-      - targets: ["localhost:9093"]
+#alerting:
+#  alertmanagers:
+#    - static_configs:
+#      - targets: ["localhost:9093"]
