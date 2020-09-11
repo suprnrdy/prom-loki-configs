@@ -33,7 +33,7 @@ scrape_configs:
   - job_name: 'keep-metrics'
     scrape_interval: 60s
     static_configs:
-         - targets: ['<IP/Hostname of Server Running Random Beacon>:8081']
+         - targets: ['REPLACE-WITH-SERVER-IP:8081']
 # Alert manager config
 #alerting:
 #  alertmanagers:
