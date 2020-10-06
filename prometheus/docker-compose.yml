@@ -3,8 +3,8 @@ prometheus:
     container_name: monitoring_prometheus
     restart: unless-stopped
     volumes:
-      - ~/prometheus:/etc/prometheus/
-      - ~/prometheus/prometheus-data:/prometheus
+      - /home/keep/prometheus:/etc/prometheus/
+      - /home/keep/prometheus/prometheus-data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'

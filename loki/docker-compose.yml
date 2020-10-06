@@ -7,5 +7,5 @@ services:
       - "3100:3100"
     command: -config.file=/etc/loki/local-config.yaml
     volumes:
-      - ~/loki:/etc/loki
+      - /home/keep/loki:/etc/loki
       # logger driver - change this driver to ship all container logs to a different location
